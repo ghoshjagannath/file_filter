@@ -1,13 +1,18 @@
-import glob 
+
+#fnmatch module is used for file searching for with respect of extensions 
+
 import os 
 import fnmatch
 import shutil
 
 # your_path=input('Type your path to search documents?------>')
 
-os.chdir(os.path.join(os.getcwd(),"file_filter"))
+# os.chdir(os.path.join(os.getcwd(),"file_filter"))
 
-print(os.getcwd())
+# print(os.getcwd())
+
+os.chdir(r"C:\Users\ghosh\Downloads")
+
 
 img_destination=os.path.join(os.getcwd(),"all_folder","photo")
 doc_destination=os.path.join(os.getcwd(),"all_folder","documents")
@@ -15,7 +20,8 @@ doc_destination=os.path.join(os.getcwd(),"all_folder","documents")
 
 
 
-        
+ #This function find out  below mentioned image extension  from pre defined 
+ #folders for this purpose  you can change your searching place        
 def image_finder():
     file_found=0
     img_lis=['*.png','*.jpg','*.jpeg']
